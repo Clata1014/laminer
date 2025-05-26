@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa Interactiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados adicionales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible para educación */
+        }
+
+        .hero-section {
+            background-image: url('https://placehold.co/1920x600/3b82f6/ffffff?text=Bienvenidos+al+Aprendizaje+Interactivo'); /* Imagen de fondo de ejemplo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-image {
+            height: 220px; /* Altura fija para las imágenes de las tarjetas */
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+        }
+
+        .btn-primary {
+            @apply bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors shadow-md;
+        }
+
+        .btn-secondary {
+            @apply bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold py-2 px-4 rounded-lg transition-colors shadow-md;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="bg-sky-700 text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="#" class="text-2xl font-bold hover:text-sky-200 transition-colors">EducaBlog</a>
+            <div class="space-x-2 mt-2 sm:mt-0">
+                <a href="#temas" class="px-3 py-2 rounded hover:bg-sky-800 transition-colors">Temas</a>
+                <a href="#recursos" class="px-3 py-2 rounded hover:bg-sky-800 transition-colors">Recursos PDF</a>
+                <a href="#nosotros" class="px-3 py-2 rounded hover:bg-sky-800 transition-colors">Nosotros</a>
+                <a href="#contacto" class="px-3 py-2 rounded hover:bg-sky-800 transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white py-24 md:py-36">
+        <div class="container mx-auto text-center bg-black bg-opacity-60 p-8 rounded-xl shadow-2xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6">Tu Aventura de Aprendizaje Comienza Aquí</h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">Explora temas fascinantes, descarga recursos y expande tus horizontes.</p>
+            <a href="#temas" class="btn-secondary text-lg py-3 px-10 transform hover:scale-105">Explorar Temas</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-5 mt-10">
+
+        <section id="temas" class="mb-20">
+            <h2 class="text-4xl font-bold text-sky-800 mb-12 text-center">Temas Educativos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <article class="bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/27ae60/ffffff?text=Ciencias+Naturales"
+                         alt="[Imagen representativa de Ciencias Naturales, ej: un microscopio o plantas]"
+                         class="w-full card-image"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+Imagen';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold text-sky-700 mb-3">Explorando el Mundo de las Ciencias</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 flex-grow">
+                            Descubre los secretos de la naturaleza, desde las células más pequeñas hasta los ecosistemas complejos.
+                            Un viaje fascinante por la biología, la química y la física.
+                        </p>
+                        <a href="#" class="btn-primary mt-auto self-start">Leer más y ver recursos...</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/8e44ad/ffffff?text=Historia+Universal"
+                         alt="[Imagen representativa de Historia, ej: un mapa antiguo o ruinas]"
+                         class="w-full card-image"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+Imagen';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold text-sky-700 mb-3">Viaje a Través de la Historia</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 flex-grow">
+                            Conoce los eventos y personajes que moldearon nuestro presente. Desde las civilizaciones antiguas
+                            hasta los acontecimientos más recientes.
+                        </p>
+                        <a href="#" class="btn-primary mt-auto self-start">Leer más y ver recursos...</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/f39c12/ffffff?text=Programación+Básica"
+                         alt="[Imagen representativa de Programación, ej: código en una pantalla]"
+                         class="w-full card-image"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Error+Imagen';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold text-sky-700 mb-3">Introducción a la Programación</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 flex-grow">
+                            Aprende los fundamentos para crear tus propias aplicaciones y páginas web.
+                            Un primer paso esencial en el mundo digital.
+                        </p>
+                        <a href="#" class="btn-primary mt-auto self-start">Leer más y ver recursos...</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="recursos" class="mb-20 p-8 bg-sky-50 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-sky-800 mb-8 text-center">Recursos Adicionales (PDFs)</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-center">
+                    <div>
+                        <h4 class="text-xl font-semibold text-sky-700">Guía Completa de Matemáticas Básicas</h4>
+                        <p class="text-slate-500 text-sm">Un resumen esencial de los conceptos clave.</p>
+                    </div>
+                    <a href="URL_DE_TU_PDF_AQUI_1.pdf" target="_blank" class="btn-secondary mt-4 sm:mt-0 whitespace-nowrap">Descargar PDF</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-center">
+                    <div>
+                        <h4 class="text-xl font-semibold text-sky-700">Manual de Buenas Prácticas de Estudio</h4>
+                        <p class="text-slate-500 text-sm">Consejos y técnicas para mejorar tu aprendizaje.</p>
+                    </div>
+                    <a href="URL_DE_TU_PDF_AQUI_2.pdf" target="_blank" class="btn-secondary mt-4 sm:mt-0 whitespace-nowrap">Descargar PDF</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                    <h4 class="text-xl font-semibold text-sky-700 mb-3">¿Quieres compartir un PDF? (Simulación)</h4>
+                    <p class="text-slate-500 text-sm mb-4">Esta función requiere programación del lado del servidor para ser completamente funcional.</p>
+                    <input type="file" accept=".pdf" class="block w-full text-sm text-slate-500
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-sky-50 file:text-sky-700
+                        hover:file:bg-sky-100
+                    " />
+                    <button type="button" onclick="alert('Función de subida no implementada en este ejemplo.')" class="btn-primary mt-4">Subir PDF (Simulado)</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="mb-20 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-sky-800 mb-8 text-center">Sobre Nosotros</h2>
+            <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto text-center">
+                Somos un equipo apasionado por la educación y la tecnología, comprometidos con ofrecer
+                recursos de calidad para facilitar el aprendizaje y el desarrollo de habilidades.
+                Creemos en el poder del conocimiento para transformar vidas.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contacto" class="bg-slate-800 text-slate-300 p-10 mt-12 text-center">
+        <div class="container mx-auto">
+            <p class="mb-3 text-lg">¿Preguntas? Contáctanos:</p>
+            <a href="mailto:info@educablog.com" class="text-sky-400 hover:text-sky-200 text-xl font-semibold">info@educablog.com</a>
+            <p class="mt-6">&copy; <span id="currentYear"></span> EducaBlog. Todos los derechos reservados.</p>
+            <p class="text-sm mt-1">Hecho con ❤️ y Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Pequeño script para actualizar el año en el pie de página
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
